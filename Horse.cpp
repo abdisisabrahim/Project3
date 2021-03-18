@@ -104,6 +104,3 @@ void Horse::addRacesWon() {
 
 
 
-/*string track = "|                   |";
-   track[0] = '>';
-   string winner_track = "|                |>";*/
