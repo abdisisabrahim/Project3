@@ -63,7 +63,7 @@ void Horse::runASecond(){
 void Horse::sendToGate() {
     setDistanceTraveled(0);
 }
-// Hello world
+
 // This method will draw where the horse is along its race and graphically display in ascii how far the horse has
 // gone on its way to goalLength. This will be scaled so it doesn’t overrun the screen.
 void Horse::displayHorse(int goalLength) {
