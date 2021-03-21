@@ -16,21 +16,21 @@ private:
        racesWon; //An int that determines how much races this horse and rider have won
 public:
 
-    Horse(string,string);
-    void setName(string);
-    void setRider(string);
-    void setMaxRunningDistPerSecond(int);
+    Horse(string,string);   // Default constructor
+    void setName(string);   // Holds name of the horse.
+    void setRider(string);  // Holds name of the rider.
+    void setMaxRunningDistPerSecond(int);   // Holds the distance
     void setDistanceTraveled(int);
-    void setRacesWon(int);
-    string getName() const;
-    string getRider() const;
-    int getMaxRunningDistPerSecond() const;
+    void setRacesWon(int);      // Holds the races won.
+    string getName() const;     // Displays the name of the horse.
+    string getRider() const;    // Displays the name of the rider
+    int getMaxRunningDistPerSecond() const; // Displays the distance
     int getDistanceTraveled() const;
     int getRacesWon() const;
-    void runASecond();
-    void sendToGate();
-    void displayHorse(int);
-    void addRacesWon();
+    void runASecond();      // Rescales the distance to what the programmer input
+    void sendToGate();      // Sets the distance travelled to zero
+    void displayHorse(int);  // Displays the race.
+    void addRacesWon();     // Adds when there's a new race.
 
 };
 

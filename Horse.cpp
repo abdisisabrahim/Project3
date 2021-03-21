@@ -8,6 +8,7 @@
 #include <math.h>
 using namespace std;
 
+//Default constructor
 Horse::Horse(string n, string r) {
     srand(time(0));
     name = n;

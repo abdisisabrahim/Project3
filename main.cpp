@@ -1,16 +1,22 @@
+/*
+Name: CS_2250_Project3.cpp
+Author: Abdisis Abrahim
+Description: This program displays a horse race.
+ */
 #include <iostream>
 #include "Horse.h"
 #include <iomanip>
 using namespace std;
 int main() {
 
-    int numhorse;
-    int racedis;
+    int numhorse;   // Number of horses
+    int racedis;    //Distance
     int totalrace = 1;
     int winning_dist = 0;
     int compare = 0;
     int winninghorse = 0;
     srand(time(0));
+    // This loop asks user to input how many horse are in the race.
     do {
         cout << "How many horses are in the race: ";
         cin >> numhorse;
@@ -20,7 +26,9 @@ int main() {
     } while (numhorse < 2);
 
     cin.ignore();
-    Horse *horse[numhorse];
+    Horse *horse[numhorse];   // Creating a pointer variable to put the number of horses in the class.
+
+    // This loop asks user for the name of the horse and rider.
     for (int i = 0; i < numhorse; ++i) {
         string nameOfHorse;
         string nameOfRider;
@@ -30,6 +38,7 @@ int main() {
         getline(cin, nameOfRider);
         horse[i] = new Horse(nameOfHorse, nameOfRider);
     }
+    // This loop asks user to for the distance of the race.
     do {
         cout << "Please enter the distance of the race: ";
         cin >> racedis;
